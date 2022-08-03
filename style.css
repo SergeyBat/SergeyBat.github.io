@@ -1,0 +1,141 @@
+.progress {
+	width: 100%;
+
+	background-color: var(--primary);
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.container {
+	margin: 0px 150px;
+}
+
+
+header {
+	display: flex;
+	margin: 0px 150px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .wrapper {
+	border: solid 1px var(--primary2);
+}
+
+.inputSearch {
+	width: 154px;
+	height: 28px;
+	border: none;
+	outline: none;
+
+}
+
+.btnSearch {
+	width: 45px;
+	height: 33px;
+	background-color: var(--primary);
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btnSearch:hover {
+	background-color: var(--primary2);
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin: 16px 0 0 0;
+	padding: 0;
+}
+
+.navigation li {
+	list-style-type: none;
+	width: 123px;
+	height: 47px;
+}
+
+.navigationLink {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--black);
+	text-decoration: none;
+	width: 123px;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.active {
+	background-color: var(--yellow);
+	color: var(--white);
+	font-weight: 700;
+}
+
+.img {
+	display: block;
+	width: 961px;
+	height: 332px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Mountains-and-hills-julian-alps.png);
+	margin: 15px auto;
+}
+
+
+.img .wrapper {
+	width: 509px;
+	margin: 0 0 0 44px;
+}
+
+.imgText {
+	width: 451px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--white);
+}
+
+
+
+h1 {
+
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 75px;
+	margin: 0;
+	padding: 19px 0 0 0;
+	color: var(--yellow);
+}
+
+.imgBtn{
+	text-transform: uppercase;
+	width: 125px;
+	height: 34px;
+	background-color: var(--primary2);
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+}
+.imgBtn:hover {
+	background-color: var(--primary);
+}
+
+
+:root {
+	--black: #000;
+	--white: white;
+	--primary: #9B51E0;
+	--yellow: #FFC740;
+	--primary2: #6D3D99;
+}
