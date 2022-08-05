@@ -5,166 +5,102 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="normalize.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<title>Super Logo</title>
 </head>
 
 <body>
-	<hr class="progress">
 	<header>
-		<span>
-			<img src="img/logo.svg" alt="logo">
-		</span>
-		<div class="wrapper">
-			<form class="formSearch" action="">
-				<input class="inputSearch" type="text">
-				<input class="btnSearch" type="submit" value="GO">
-			</form>
+		<div class="container-fluid p-0">
+			<div class="progress" style="height: 5px;">
+				<div class="progress-bar" role="progressbar" style="width: 100%; background-color: #9B51E0"
+					aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
 		</div>
+		<nav class="navbar navbar-expand-md navbar mt-4 p-0">
+			<div class="container ">
+				<div class="row flex-wrap justify-content-between align-items-center">
+					<button class="navbar-toggler col-1  p-1 h-75 " type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand col-5 col-sm-4 col-md-3  col-lg-3" href="javascript:void(0)">
+						<img class="img-fluid img-logo" src="img/logo.svg" alt="logo">
+					</a>
+					<form class="d-flex col-5 col-md-4 col-lg-3 form-search h-25 border-5">
+						<input class="form-control rounded-0 border-5" type="text" placeholder="Search">
+						<button class="btn form-search-btn rounded-0 " type="button">GO</button>
+					</form>
+					<div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
+						<ul class="navbar-nav justify-content-between align-items-center mt-3 mr-0 w-100">
+							<li class="nav-item  text-center w-25">
+								<a class="nav-link active text-white" href="javascript:void(0)"> HOME</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">ABOUT US</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">SERVICE</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">PARTNERS</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">CUSTOMERS</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">PROJECT</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">CAREERS</a>
+							</li>
+							<li class="nav-item text-center w-25">
+								<a class="nav-link text-dark" href="javascript:void(0)">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
 	</header>
 
-	<nav>
-		<div class="container">
-			<ul class="navigation">
-				<li><a class="navigationLink active" href="">home</a></li>
-				<li><a class="navigationLink" href="">about us</a></li>
-				<li><a class="navigationLink" href="">service</a></li>
-				<li><a class="navigationLink" href="">partners</a></li>
-				<li><a class="navigationLink" href="">customers</a></li>
-				<li><a class="navigationLink" href="">project</a></li>
-				<li><a class="navigationLink" href="">careers</a></li>
-				<li><a class="navigationLink" href="">contact</a></li>
-			</ul>
-		</div>
-
-	</nav>
 	<main>
 		<div class="container">
-			<section class="img">
-				<div class="wrapper">
-					<h1>
-						Aliquam pharetra vulputate
-					</h1>
-					<p class="imgText">
-						Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse
-						sollicitudin quam eget
-						condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam
-						eu consectetur nisi.
-						Aenean blandit sodales euismod. In hac habitasse platea dictumst.
-					</p>
-					<button class="imgBtn">
-						Read More
-					</button>
+			<section class="image w-100 mt-3 position-relative">
+				<div class="row">
+					<div class="col-7 text-center">
+						<h1>Aliquam pharetra vulputate</h1>
+					</div>
+					<div class="text col-6 text-start">
+						<p>
+							Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse
+							sollicitudin quam eget
+							condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus.
+							Etiam eu consectetur
+							nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.
+						</p>
+						<button>
+							READ MORE
+						</button>
+					</div>
 				</div>
-			</section>
 
-			<section class="posts">
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcpuprle">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcpuprle">
-					</div>
-					<div class="postFilling">
-						<img src="img/dog.png" alt="dog" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
-						</div>
-					</div>
-				</div>		
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcyellow">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcyellow">
-					</div>
-					<div class="postFilling">
-						<img src="img/steve.png" alt="Steve Jobs" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcyellow">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcyellow">
-					</div>
-					<div class="postFilling">
-						<img src="img/image3.png" alt="img" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcpuprle">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcpuprle">
-					</div>
-					<div class="postFilling">
-						<img src="img/image4.png" alt="img" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="clients">
-					<div class="clientTitle">
-						<h2 class="clientH2">Clients</h2>
-					</div>
-					<div class="wrapper">
-						<img src="img/download-1.png" alt="png1">
-						<img src="img/download-2.png" alt="png2">
-						<img src="img/download-3.png" alt="png3">
-						<img src="img/download-4.png" alt="png4">
-						<img src="img/download-5.png" alt="png5">
-					</div>
+
+
 			</section>
 		</div>
 	</main>
-	<footer>
-		<h2 class="titleFooter">
-			Copyright © Lodoss Team 2018
-		</h2>
-	</footer>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
