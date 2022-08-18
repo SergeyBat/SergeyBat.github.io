@@ -6,6 +6,8 @@
 }
 
 .additional-information-blocks-description {
+	position: relative;
+	animation: left_or_right 3s 1 linear;
 	display: flex;
 	flex-direction: column;
 }
@@ -14,6 +16,15 @@
 	align-self: start;
 }
 
+@keyframes left_or_right {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 
 
 @media (max-width: 768px) {
