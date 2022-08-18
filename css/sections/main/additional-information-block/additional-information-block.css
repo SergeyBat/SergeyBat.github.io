@@ -1,0 +1,29 @@
+.additional-information-blocks {
+	margin-top: 33px;
+	display: grid;
+	gap: 20px 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.additional-information-blocks-description {
+	display: flex;
+	flex-direction: column;
+}
+
+.information-block{
+	align-self: start;
+}
+
+
+
+@media (max-width: 768px) {
+	.additional-information-blocks {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 576px) {
+	.additional-information-blocks {
+		grid-template-columns: 1fr;
+	}
+}

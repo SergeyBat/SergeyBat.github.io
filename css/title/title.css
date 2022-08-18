@@ -1,0 +1,43 @@
+.title{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+.title_theme_line {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.title_theme_line::before {
+	width: 16px;
+	margin-right: 5px;
+}
+
+.title_theme_line::after {
+	width: auto;
+	content: "";
+	flex-grow: 1;
+	margin-left: 5px;
+}
+
+
+.title_theme_line::before,
+.title_theme_line::after {
+	height: 16px;
+	content: '';
+}
+
+
+
+.title_theme_line_primary::after,
+.title_theme_line_primary::before {
+	background-color:#9B51E0;
+}
+
+.title_theme_line_yellow::after,
+.title_theme_line_yellow::before {
+	background-color: #FFC740;
+}

@@ -1,0 +1,38 @@
+.posts {
+	margin-top: 33px;
+	display: grid;
+	gap: 33px 20px;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+
+.post-description {
+	margin-left: 16px;
+}
+
+.post-description__text {
+	text-align: justify;
+}
+
+.post-description__text-bottom{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.post-image-wrapper{
+	flex: 0 0 30%;
+	min-height: 140px;
+}
+
+.post__image{
+	width: 100%;
+	height: 100%;
+}
+
+
+@media (max-width: 768px) {
+	.posts{
+		grid-template-columns: 1fr;
+	}
+}

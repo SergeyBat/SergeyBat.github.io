@@ -1,0 +1,39 @@
+.header-main{
+	display: flex;
+	margin-top: 25px;
+	align-items: center;
+	column-gap: 20px;
+	height: 7vh;
+}
+
+.header-main-wrapper-logo {
+	margin-right: auto;
+
+
+}
+
+.header-main__logo{
+	width: 100%;
+}
+
+.header-main__button_image {
+	width: 30px;
+	height: 30px;
+}
+
+.header-main__button {
+	height: 32px;
+	width: 32px;
+	display: none;
+}
+
+@media (max-width: 992px) {
+	.header-main__button {
+		display: flex;
+	}
+	.header-menu{
+		display: none;
+	}
+
+}
+

@@ -1,0 +1,21 @@
+.main {
+	margin-top: 16px;
+}
+
+.clients {
+	margin-top: 33px;
+}
+
+.clients-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+@media (max-width: 960px) {
+	.clients-list__image {
+		width: 100%;
+	}
+}

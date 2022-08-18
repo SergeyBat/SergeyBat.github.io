@@ -1,0 +1,12 @@
+.information-block{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 3px;
+
+}
+
+.information-block-description{
+	margin: 0 0 0 10px;
+}
+
