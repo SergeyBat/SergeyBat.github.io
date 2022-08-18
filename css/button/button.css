@@ -12,5 +12,6 @@
 	background-color: #fff;
 }
 
-
-
+.button:hover{
+	transition: 1s;
+}
