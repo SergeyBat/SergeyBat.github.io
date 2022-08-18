@@ -24,13 +24,32 @@
 	margin-top: 16px;
 	padding: 8px 24px;
 	background-color: #6D3D99;
+	animation: button_color 3s infinite 1.5s;
+}
+
+.billboard-description__button:hover {
+	background-color: #9B51E0;
+	animation: none;
 }
 
 .billboard-description__text {
 	text-align: start;
 }
 
+@keyframes button_color {
+	0% {
+		background-color: #6D3D99;
+	}
 
+	50% {
+		background-color: #FFC740;
+		border-radius: 10px;
+	}
+
+	100% {
+		background-color: #6D3D99;
+	}
+}
 
 @media screen and (max-width: 992px) {
 
@@ -65,10 +84,11 @@
 }
 
 @media screen and (max-width: 580px) {
-	.billboard{
+	.billboard {
 		height: 100%;
 		padding: 20px 0;
 	}
+
 	.billboard__title {
 		font-size: 35px;
 		line-height: 40px;
@@ -94,6 +114,7 @@
 	.billboard {
 		padding: 10px 0;
 	}
+
 	.billboard__title {
 		font-size: 24px;
 		line-height: 30px;
@@ -114,4 +135,3 @@
 		background-color: #6D3D99;
 	}
 }
-
