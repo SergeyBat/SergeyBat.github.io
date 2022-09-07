@@ -1,0 +1,118 @@
+.billboard {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/image_background_mountains.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	@media screen {
+		@media (max-width: 580px) {
+			height: 100%;
+			padding: 20px 0;
+		}
+		@media (max-width: 480px) {
+			padding: 10px 0;
+		}
+	}
+	&__title {
+		font-size: 64px;
+		line-height: 75px;
+		margin-left: 44px;
+		width: 60%;
+		@media screen {
+			@media(max-width: 992px) {
+				font-size: 50px;
+				line-height: 50px;
+				margin-left: 44px;
+				width: 60%;
+			}
+			@media(max-width: 768px) {
+				font-size: 40px;
+				line-height: 50px;
+				margin-left: 25px;
+				width: 80%;
+			}
+			@media(max-width: 580px) {
+				font-size: 35px;
+				line-height: 40px;
+				margin-left: 15px;
+				width: 95%;
+			}
+			@media(max-width: 480px) {
+				font-size: 24px;
+				line-height: 30px;
+				margin-left: 5px;
+				width: 95%;
+			}
+		}
+	}
+	
+	&-description {
+		margin-top: 16px;
+		margin-left: 45px;
+		width: 45%;
+		@media screen {
+			@media(max-width: 992px) {
+				width: 50%;
+				margin-top: 10px;
+			}
+			@media(max-width: 768px) {
+				width: 75%;
+				margin-top: 5px;
+				margin-left: 25px;
+			}
+			@media(max-width: 580px) {
+				width: 80%;
+				margin-left: 15px;
+				font-size: 14px;
+			}
+			@media(max-width: 480px) {
+				width: 95%;
+				margin-left: 5px;
+				font-size: 14px;
+			}
+		}
+		&__button {
+			margin-top: 16px;
+			padding: 8px 24px;
+			background-color: #6D3D99;
+			animation: button_color 3s infinite 1.5s;
+			&:hover {
+				background-color: #9B51E0;
+				animation: none;
+			}
+			@media screen {
+				@media(max-width: 580px) {
+					margin-top: 8px;
+					padding: 4px 12px;
+					background-color: #6D3D99;
+				}
+				@media(max-width: 480px) {
+					font-size: 12px;
+					margin-top: 8px;
+					padding: 4px 12px;
+					background-color: #6D3D99;
+				}
+			}
+		}
+		&__text {
+			text-align: start;
+		}
+	}
+}
+
+
+@keyframes button_color {
+	0% {
+		background-color: #6D3D99;
+	}
+
+	50% {
+		background-color: #FFC740;
+		border-radius: 10px;
+	}
+
+	100% {
+		background-color: #6D3D99;
+	}
+}

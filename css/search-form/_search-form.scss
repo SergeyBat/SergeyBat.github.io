@@ -1,0 +1,24 @@
+.search-form {
+	display: flex;
+	max-width: 200px;
+	border: 1px solid #6D3D99;
+	gap: 5px;
+	&__input {
+		border: none;
+		padding: 3px;
+		font-size: 18px;
+		outline: none;
+		width: 100%;
+		flex: 0 1 75%;
+		&_type_submit {
+			border: none;
+			width: 100%;
+			flex: 0 1 25%;
+			padding: 6px;
+			background-color: #9B51E0;
+		}
+		&_type_submit :hover {
+			background-color: #6D3D99;
+		}
+	}
+}

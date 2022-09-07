@@ -10,8 +10,7 @@
 	font-size: 14px;
 	font-weight: 700;
 	background-color: #fff;
-}
-
-.button:hover{
-	transition: 1s;
+	&:hover{
+		transition: 1s;
+	}
 }
