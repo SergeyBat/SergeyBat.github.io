@@ -5,165 +5,246 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.min.css">
 	<title>Super Logo</title>
 </head>
 
 <body>
-	<hr class="progress">
-	<header>
-		<span>
-			<img src="img/logo.svg" alt="logo">
-		</span>
-		<div class="wrapper">
-			<form class="formSearch" action="">
-				<input class="inputSearch" type="text">
-				<input class="btnSearch" type="submit" value="GO">
-			</form>
+	<header class="header">
+		<div class="header__progress"></div>
+		<div class="container">
+			<div class="header-main">
+				<div class="header-main-wrapper-logo">
+					<img class="header-main__logo" src="img/logo.svg" alt="">
+				</div>
+				<form action="" class="search-form">
+					<input type="text" class="search-form__input">
+					<input type="submit" class="search-form__input search-form__input_type_submit button" value="GO">
+				</form>
+				<button class="button header-main__button">
+					<img class="header-main__button_image" src="img/menu.svg" alt="">
+				</button>
+			</div>
+			<nav class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__item">
+						<a href="" class="header-menu__title link title link_active  ">Home</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">About Us</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Service</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Partners</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Customers</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Project</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Careers</a>
+					</li>
+					<li class="header-menu__item  ">
+						<a href="" class="header-menu__title link title">Contact</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-
-	<nav>
+	<main class="main">
 		<div class="container">
-			<ul class="navigation">
-				<li><a class="navigationLink active" href="">home</a></li>
-				<li><a class="navigationLink" href="">about us</a></li>
-				<li><a class="navigationLink" href="">service</a></li>
-				<li><a class="navigationLink" href="">partners</a></li>
-				<li><a class="navigationLink" href="">customers</a></li>
-				<li><a class="navigationLink" href="">project</a></li>
-				<li><a class="navigationLink" href="">careers</a></li>
-				<li><a class="navigationLink" href="">contact</a></li>
-			</ul>
-		</div>
-
-	</nav>
-	<main>
-		<div class="container">
-			<section class="img">
-				<div class="wrapper">
-					<h1>
-						Aliquam pharetra vulputate
-					</h1>
-					<p class="imgText">
-						Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse
-						sollicitudin quam eget
-						condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. Etiam
-						eu consectetur nisi.
-						Aenean blandit sodales euismod. In hac habitasse platea dictumst.
+			<div class="billboard animate__animated animate__fadeInLeftBig">
+				<h1 class="billboard__title text_color_yellow">
+					Aliquam pharetra vulputate
+				</h1>
+				<div class="billboard-description">
+					<p class="billboard-description__text text text-size-m text_color_white">Vivamus est mauris,
+						sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget
+						condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis ringilla tempus. Etiam eu
+						consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.
 					</p>
-					<button class="imgBtn">
-						Read More
-					</button>
+					<button class="billboard-description__button button"> Read more</button>
 				</div>
-			</section>
+			</div>
+			<div class="posts">
+				<div class="post">
+					<h2 class="post__title title title_theme_line title_theme_line_primary text_weight_l">ABOUT SUPER
+						LOGO</h2>
+					<div class="information-block">
+						<div class="post-image-wrapper">
+							<img class="post__image" src="img/image_dog.png" alt="">
+						</div>
 
-			<section class="posts">
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcpuprle">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcpuprle">
-					</div>
-					<div class="postFilling">
-						<img src="img/dog.png" alt="dog" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
-						</div>
-					</div>
-				</div>		
-				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcyellow">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcyellow">
-					</div>
-					<div class="postFilling">
-						<img src="img/steve.png" alt="Steve Jobs" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
+						<div class="post-description">
+							<p class="post-description__text text text_size_s ">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean
+								hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
+								vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere
+								tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non
+								sollicitudin suscipit, eros erat</p>
+							<a href="" class="post-description__text-bottom link text_size_s ">Read more...</a>
 						</div>
 					</div>
 				</div>
 				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcyellow">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcyellow">
-					</div>
-					<div class="postFilling">
-						<img src="img/image3.png" alt="img" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
+					<h2 class="post__title title title_theme_line title_theme_line_yellow text_weight_l">SOME WORDS OUR
+						CEO</h2>
+					<div class="information-block">
+						<div class="post-image-wrapper">
+							<img class="post__image" src="img/image_steve.png" alt="">
+						</div>
+						<div class="post-description">
+							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean
+								hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
+								vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere
+								tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non
+								sollicitudin suscipit, eros erat</p>
+							<span class="post-description__text-bottom text text_size_s ">Steve Jobs, CEO</span>
 						</div>
 					</div>
 				</div>
 				<div class="post">
-					<div class="postTitle">
-						<hr class="square bcpuprle">
-						<h2>About super logo</h2>
-						<hr class="rectangle bcpuprle">
-					</div>
-					<div class="postFilling">
-						<img src="img/image4.png" alt="img" class="postImg">
-						<div class="postInfo">
-							<p class="postText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec,
-								iaculis molestie
-								leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
-								vulputate vitae
-								dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
-								diam id
-								faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-							</p>
-							<a class="postLink" href="">Read more</a>
+					<h2 class="post__title title title_theme_line title_theme_line_yellow text_weight_l">ABOUT SUPER
+						LOGO</h2>
+					<div class="information-block">
+						<div class="post-image-wrapper">
+							<img class="post__image" src="img/image_lemur.png" alt="">
+						</div>
+						<div class="post-description">
+							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean
+								hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
+								vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere
+								tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non
+								sollicitudin suscipit, eros erat</p>
+							<a href="" class="post-description__text-bottom link text_size_s ">Read more...</a>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="clients">
-					<div class="clientTitle">
-						<h2 class="clientH2">Clients</h2>
+				<div class="post">
+					<h2 class="post__title title title_theme_line title_theme_line_primary text_weight_l">SOME WORDS OUR
+						CEO</h2>
+					<div class="information-block">
+						<div class="post-image-wrapper">
+							<img class="post__image" src="img/image_women.png" alt="">
+						</div>
+						<div class="post-description">
+							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean
+								hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed
+								vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere
+								tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non
+								sollicitudin suscipit, eros erat</p>
+							<span class="text  text_size_s  post-description__text-bottom">Steve Jobs, CEO</span>
+						</div>
 					</div>
-					<div class="wrapper">
-						<img src="img/download-1.png" alt="png1">
-						<img src="img/download-2.png" alt="png2">
-						<img src="img/download-3.png" alt="png3">
-						<img src="img/download-4.png" alt="png4">
-						<img src="img/download-5.png" alt="png5">
+				</div>
+			</div>
+			<div class="additional-information-blocks">
+				<div class="additional-information-blocks-description">
+					<h2 class="information-block__title title title_theme_line title_theme_line_yellow text_weight_l">
+						ABOUT SUPER LOGO</h2>
+					<p class="information-block__text text text_size_s ">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit
+						pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+						non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
+						diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+					<a href="" class="post-description__text-bottom link text_size_s ">Read more...</a>
+
+				</div>
+				<div class="additional-information-blocks-description">
+					<h2 class="information-block__title title title_theme_line title_theme_line_primary text_weight_l ">
+						ABOUT SUPER LOGO</h2>
+
+					<div class="information-block">
+						<img src="img/image_car.png" alt="">
+						<div class="information-block-description">
+							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
+							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
+								rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</div>
 					</div>
-			</section>
-		</div>
+					<div class="information-block">
+						<img src="img/image_phone.png" alt="">
+						<div class="information-block-description">
+							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
+							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
+								rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</div>
+					</div>
+					<div class="information-block">
+						<img src="img/image_bbc.png" alt="">
+						<div class="information-block-description">
+							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
+							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
+								rutrum. Pellentesque mattis sem a efficitur auctor.</p>
+						</div>
+					</div>
+				</div>
+				<div class="additional-information-blocks-description">
+					<h2 class="information-block__title title title_theme_line title_theme_line_yellow text_weight_l">
+						ABOUT SUPER LOGO</h2>
+					<p class="information-block__text text text_size_s ">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit
+						pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui
+						non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur
+						diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat</p>
+					<a href="" class="post-description__text-bottom link text_size_s ">Read more...</a>
+				</div>
+			</div>
+			<div class="clients">
+				<h2 class="clients__title title title_theme_line title_theme_line_primary text_weight_l ">clients</h2>
+				<div class="clients-list">
+					<div class="clients-list-wrapper">
+						<img class="clients-list__image" src="img/image_html.png" alt="">
+					</div>
+					<div class="clients-list-wrapper">
+						<img class="clients-list__image" src="img/image_css.png" alt="">
+					</div>
+					<div class="clients-list-wrapper">
+						<img class="clients-list__image" src="img/image_node.png" alt="">
+					</div>
+					<div class="clients-list-wrapper">
+						<img class="clients-list__image" src="img/image_php.png" alt="">
+					</div>
+					<div class="clients-list-wrapper">
+						<img class="clients-list__image" src="img/image_sql.png" alt="">
+					</div>
+
+
+				</div>
+			</div>
+			<div class="media">
+				<h2 class="media__title title title_theme_line title_theme_line_yellow text_weight_l">Video and audio
+				</h2>
+				<div class="media-content">
+					<video class="media-content__video" src="video/RazerBlackShark.mp4" controls></video>
+					<div class="media-content-audios">
+						<div class="media-content__audio">
+							<h2 class="title title_theme_line title_theme_line_primary text_weight_l">Thousand Foot
+								Krutch - Take It Out On Me
+							</h2>
+							<audio src="audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
+						</div>
+						<div class="media-content__audio">
+							<h2 class="title title_theme_line title_theme_line_primary text_weight_l">Thousand Foot
+								Krutch - Take It Out On Me
+							</h2>
+							<audio src="audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
+						</div>
+					</div>
+				</div>
+			</div>
 	</main>
-	<footer>
-		<h2 class="titleFooter">
+	<footer class="footer">
+		<div class="footer__text text text-size-m text_weight_l text_color_white ">
 			Copyright © Lodoss Team 2018
-		</h2>
+		</div>
 	</footer>
 </body>
 

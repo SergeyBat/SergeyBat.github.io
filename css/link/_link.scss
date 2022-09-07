@@ -1,0 +1,14 @@
+.link{
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	&_active {
+		background-color: #FFC740;
+		color: white;
+		font-weight: 700;
+	}
+}
+
+

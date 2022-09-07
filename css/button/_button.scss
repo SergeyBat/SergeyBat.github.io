@@ -1,0 +1,16 @@
+.button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: #fff;
+	&:hover{
+		transition: 1s;
+	}
+}

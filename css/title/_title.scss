@@ -1,0 +1,35 @@
+.title{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	&_theme_line {
+		display: flex;
+		margin-bottom: 16px;
+		&::before {
+			width: 16px;
+			margin-right: 5px;
+			height: 16px;
+		}
+		&::after {
+			height: 16px;
+			width: auto;
+			content: "";
+			flex-grow: 1;
+			margin-left: 5px;
+		}
+		&_primary{
+			&::after,
+			&::before{
+				background-color:#9B51E0;
+			}
+		}
+		&_yellow{
+			&::after,
+			&::before{
+				background-color:#FFC740;
+			}
+		}
+	}
+	
+}

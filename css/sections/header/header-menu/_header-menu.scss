@@ -1,0 +1,22 @@
+.header-menu {
+	margin-top: 16px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__item {
+		list-style-type: none;
+	}
+	
+	&__title{
+		text-decoration: none;
+		width: 123px;
+		height: 47px;
+		@media (max-width: 1024px) {
+			width: 100px;
+			height: 40px;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.additional-information-blocks {
+	margin-top: 33px;
+	display: grid;
+	gap: 20px 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 576px) {
+		grid-template-columns: 1fr;
+	}
+	&-description {
+		position: relative;
+		animation: left_or_right 3s 1 linear;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.information-block{
+	align-self: start;
+}
+
+@keyframes left_or_right {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
