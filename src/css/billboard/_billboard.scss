@@ -101,6 +101,39 @@
 	}
 }
 
+.slider{
+	overflow: hidden;
+}
+
+.slider-track{
+	display: flex;
+
+}
+
+.slide[data-visible='false']{
+	display: none;
+}
+.slide[data-visible='true']{
+	display: block;
+}
+
+.slider-button-nav{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 5px;
+}
+
+.slider__button{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: none;
+	background-color:#9B51E0;
+	color: white;
+	cursor: pointer;
+}
 
 @keyframes button_color {
 	0% {

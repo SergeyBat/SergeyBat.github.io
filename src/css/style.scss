@@ -1,5 +1,7 @@
-@import './billboard/billboard';
 @import './button/button';
+@import './text/text';
+@import './title/title';
+@import './billboard/billboard';
 @import './information-block/information-block';
 @import './link/link';
 @import './search-form/search-form';
@@ -8,8 +10,6 @@
 @import './sections/header/header-main/header-main';
 @import './sections/header/header-menu/header-menu';
 @import './sections/main/main';
-@import './text/text';
-@import './title/title';
 
 * {
 	margin: 0;
@@ -20,13 +20,15 @@
 .container {
 	width: 960px;
 	margin: 0 auto;
-	@media screen and (max-width: 992px) {
-		max-width: 768px;
-	}
-	@media screen and (max-width: 768px) {
-		max-width: 576px;
-	}
-	@media screen and (max-width: 580px) {
-		max-width: 95%;
+	@media screen {
+		@media (max-width: 992px) {
+			max-width: 768px;
+		}
+		@media (max-width: 768px) {
+			max-width: 576px;
+		}
+		@media (max-width: 580px) {
+			max-width: 95%;
+		}
 	}
 }

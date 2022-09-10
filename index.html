@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./dist/main.css">
+	<!-- <link rel="stylesheet" href="./src/css/style.min.css"> -->
 	<title>Super Logo</title>
 </head>
 
@@ -15,14 +16,14 @@
 		<div class="container">
 			<div class="header-main">
 				<div class="header-main-wrapper-logo">
-					<img class="header-main__logo" src="img/logo.svg" alt="">
+					<img class="header-main__logo" src="src/img/logo.svg" alt="">
 				</div>
 				<form action="" class="search-form">
 					<input type="text" class="search-form__input">
 					<input type="submit" class="search-form__input search-form__input_type_submit button" value="GO">
 				</form>
 				<button class="button header-main__button">
-					<img class="header-main__button_image" src="img/menu.svg" alt="">
+					<img class="header-main__button_image" src="src/img/menu.svg" alt="">
 				</button>
 			</div>
 			<nav class="header-menu">
@@ -57,17 +58,23 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			<div class="billboard animate__animated animate__fadeInLeftBig">
-				<h1 class="billboard__title text_color_yellow">
-					Aliquam pharetra vulputate
-				</h1>
-				<div class="billboard-description">
-					<p class="billboard-description__text text text-size-m text_color_white">Vivamus est mauris,
-						sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget
-						condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis ringilla tempus. Etiam eu
-						consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.
-					</p>
-					<button class="billboard-description__button button"> Read more</button>
+			<div class="slider">
+				<div class="slider-tack">
+					<!-- <div class="slide billboard animate__animated animate__fadeInLeftBig" data-visible='true'>
+						<h1 class="billboard__title text_color_yellow">
+							Aliquam pharetra vulputate
+						</h1>
+						<div class="billboard-description">
+							<p class="billboard-description__text text text-size-m text_color_white">Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis ringilla tempus. Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.
+							</p>
+							<button class="billboard-description__button button"> Read more</button>
+						</div>
+					</div> -->
+					
+				</div>
+				<div class="slider-button-nav">
+					<button class="slider__button slidePrev">&#60</button>
+					<button class="slider__button slideNext">&#62</button>
 				</div>
 			</div>
 			<div class="posts">
@@ -76,7 +83,7 @@
 						LOGO</h2>
 					<div class="information-block">
 						<div class="post-image-wrapper">
-							<img class="post__image" src="img/image_dog.png" alt="">
+							<img class="post__image" src="src/img/image_dog.png" alt="">
 						</div>
 
 						<div class="post-description">
@@ -95,7 +102,7 @@
 						CEO</h2>
 					<div class="information-block">
 						<div class="post-image-wrapper">
-							<img class="post__image" src="img/image_steve.png" alt="">
+							<img class="post__image" src="src/img/image_steve.png" alt="">
 						</div>
 						<div class="post-description">
 							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
@@ -113,7 +120,7 @@
 						LOGO</h2>
 					<div class="information-block">
 						<div class="post-image-wrapper">
-							<img class="post__image" src="img/image_lemur.png" alt="">
+							<img class="post__image" src="src/img/image_lemur.png" alt="">
 						</div>
 						<div class="post-description">
 							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
@@ -131,7 +138,7 @@
 						CEO</h2>
 					<div class="information-block">
 						<div class="post-image-wrapper">
-							<img class="post__image" src="img/image_women.png" alt="">
+							<img class="post__image" src="src/img/image_women.png" alt="">
 						</div>
 						<div class="post-description">
 							<p class="post-description__text text  text_size_s ">Lorem ipsum dolor sit amet, consectetur
@@ -162,7 +169,7 @@
 						ABOUT SUPER LOGO</h2>
 
 					<div class="information-block">
-						<img src="img/image_car.png" alt="">
+						<img src="src/img/image_car.png" alt="">
 						<div class="information-block-description">
 							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
 							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
@@ -170,7 +177,7 @@
 						</div>
 					</div>
 					<div class="information-block">
-						<img src="img/image_phone.png" alt="">
+						<img src="src/img/image_phone.png" alt="">
 						<div class="information-block-description">
 							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
 							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
@@ -178,7 +185,7 @@
 						</div>
 					</div>
 					<div class="information-block">
-						<img src="img/image_bbc.png" alt="">
+						<img src="src/img/image_bbc.png" alt="">
 						<div class="information-block-description">
 							<h3 class="title title_transform_none text_size_s">LOREM IPSUM</h3>
 							<p class="post-description__text text text_size_s ">Aenean hendrerit pretium enim quis
@@ -201,19 +208,19 @@
 				<h2 class="clients__title title title_theme_line title_theme_line_primary text_weight_l ">clients</h2>
 				<div class="clients-list">
 					<div class="clients-list-wrapper">
-						<img class="clients-list__image" src="img/image_html.png" alt="">
+						<img class="clients-list__image" src="src/img/image_html.png" alt="">
 					</div>
 					<div class="clients-list-wrapper">
-						<img class="clients-list__image" src="img/image_css.png" alt="">
+						<img class="clients-list__image" src="src/img/image_css.png" alt="">
 					</div>
 					<div class="clients-list-wrapper">
-						<img class="clients-list__image" src="img/image_node.png" alt="">
+						<img class="clients-list__image" src="src/img/image_node.png" alt="">
 					</div>
 					<div class="clients-list-wrapper">
-						<img class="clients-list__image" src="img/image_php.png" alt="">
+						<img class="clients-list__image" src="src/img/image_php.png" alt="">
 					</div>
 					<div class="clients-list-wrapper">
-						<img class="clients-list__image" src="img/image_sql.png" alt="">
+						<img class="clients-list__image" src="src/img/image_sql.png" alt="">
 					</div>
 
 
@@ -223,19 +230,19 @@
 				<h2 class="media__title title title_theme_line title_theme_line_yellow text_weight_l">Video and audio
 				</h2>
 				<div class="media-content">
-					<video class="media-content__video" src="video/RazerBlackShark.mp4" controls></video>
+					<video class="media-content__video" src="src/video/RazerBlackShark.mp4" controls></video>
 					<div class="media-content-audios">
 						<div class="media-content__audio">
 							<h2 class="title title_theme_line title_theme_line_primary text_weight_l">Thousand Foot
 								Krutch - Take It Out On Me
 							</h2>
-							<audio src="audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
+							<audio src="src/audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
 						</div>
 						<div class="media-content__audio">
 							<h2 class="title title_theme_line title_theme_line_primary text_weight_l">Thousand Foot
 								Krutch - Take It Out On Me
 							</h2>
-							<audio src="audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
+							<audio src="src/audio/Thousand Foot Krutch - Take It Out On Me.mp3" controls></audio>
 						</div>
 					</div>
 				</div>
@@ -246,6 +253,8 @@
 			Copyright © Lodoss Team 2018
 		</div>
 	</footer>
+	<script src="./dist/main.js"></script>
+	<!-- <script src="./src/js/script.js"></script> -->
 </body>
 
 </html>
