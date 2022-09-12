@@ -4,17 +4,17 @@ const listItem = [
 	{
 		title: 'Aliquam pharetra vulputate',
 		text: '	Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. Suspendisse sollicitudin quam eget condimentum posuere. In auctor vel mi porta commodo. Vestibulum mattis ringilla tempus. Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst.',
-		url: './assets/image/image_background_mountains.png',
+		url: '../src/img/image_background_mountains.png',
 	},
 	{
 		title: 'Razer',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis modi expedita veritatis dicta quisquam saepe officia, veniam fuga ut cum id quae velit amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis modi expedita veritatis dicta quisquam saepe officia, veniam fuga ut cum id quae velit amet.',
-		url: './assets/image/Razer-BlackShark-poster.jpg',
+		url: '../src/img/Razer-BlackShark-poster.jpg',
 	},
 	{
 		title: 'IMG Academy ',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis modi expedita veritatis dicta quisquam saepe officia, veniam fuga ut cum id quae velit amet.',
-		url: './assets/image/helpbox-contact.jpg',
+		url: '../src/img/helpbox-contact.jpg',
 	},
 
 ];
@@ -34,8 +34,8 @@ function addSlides(list) {
 		}
 		div.style.backgroundImage = `url(${e.url})`;
 		div.style.backgroundColor = 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))';
-		div.style.backgroundRepeat = 'no-repeat'
-		div.style.backgroundSize = '100% 100%'
+		div.style.backgroundRepeat = 'no-repeat';
+		div.style.backgroundSize = '100% 100%';
 		div.innerHTML = `
 				<h1 class="billboard__title text_color_yellow">
 								${e.title}
