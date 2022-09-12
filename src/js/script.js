@@ -34,8 +34,8 @@ function addSlides(list) {
 		}
 		div.style.backgroundImage = `url(${e.url})`;
 		div.style.backgroundColor = 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))';
-		div.style.backgroundRepeat = 'no-repeat';
-		div.style.backgroundSize = '100% 100%';
+		div.style.backgroundRepeat = 'no-repeat'
+		div.style.backgroundSize = '100% 100%'
 		div.innerHTML = `
 				<h1 class="billboard__title text_color_yellow">
 								${e.title}
