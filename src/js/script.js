@@ -1,5 +1,10 @@
 /* eslint-disable no-tabs */
 /* eslint-disable no-undef */
+import axios from 'axios';
+
+// eslint-disable-next-line no-alert
+let result = prompt('Укажите количество постов', 0);
+
 const listItem = [
 	{
 		title: 'Aliquam pharetra vulputate',
@@ -77,3 +82,71 @@ buttonNextSlide.addEventListener('click', () => {
 		slides[currentSlide - 1].dataset.visible = 'false';
 	}
 });
+const url = `https://baconipsum.com/api/?type=meat-and-filler&paras=${result}&format=json`;
+async function doGetRequest() {
+	const res = await axios.get(`${url}`);
+	const { data } = res;
+	return data;
+}
+result = Number(result);
+if (/\d+/.test(result) && result !== 0 && result !== undefined) {
+	const posts = document.querySelector('.posts');
+	doGetRequest().then((data) => {
+		let themeLinePrev = 'title_theme_line_primary';
+		let themeLine = 'title_theme_line_primary';
+		let link = '<button class="post-description__text-bottom text_size_s read-more__button">Read more...</button>';
+		let str = '';
+		let text = '';
+		// eslint-disable-next-line no-useless-escape
+		const reg = /^.{0,425}[\s!,\.\\\/]/m;
+		data.forEach((e, index) => {
+			const post = document.createElement('div');
+			post.className = 'post';
+			if (index === 0) {
+				themeLine = 'title_theme_line_primary';
+			} else if (index % 2 === 0) {
+				themeLine = themeLinePrev;
+			} else if (index % 2 === 1 && themeLinePrev === 'title_theme_line_primary') {
+				themeLine = 'title_theme_line_yellow';
+			} else if (index % 2 === 1 && themeLinePrev === 'title_theme_line_yellow') {
+				themeLine = 'title_theme_line_primary';
+			}
+			if (e.length >= 425) {
+				const masReg = e.match(reg);
+				// eslint-disable-next-line prefer-destructuring
+				str = masReg[0];
+				// eslint-disable-next-line no-useless-escape
+				if (/\W+$/g.test(str)) {
+					const partReplace = str.match(/\W+$/g);
+					str.slice(-partReplace[0].length);
+					text = `${str}...`;
+				}
+				link = '<button class="post-description__text-bottom text_size_s read-more__button">Read more...</button>';
+			} else {
+				text = e;
+				link = '';
+			}
+			post.innerHTML = `
+						<h2 class="post__title title title_theme_line ${themeLine} text_weight_l">ABOUT SUPER LOGO</h2>
+						<div class="information-block">
+							<div class="post-image-wrapper">
+								<img class="post__image" src="src/img/image_${Math.floor(Math.random() * (Math.floor(4) - Math.ceil(0))) + Math.ceil(0)}.png" alt="img">
+							</div>
+							<div class="post-description">
+								<p id='${index}' class="post-description__text text text_size_s">${text}</p>
+								${link}
+							</div>
+						</div>`;
+			posts.append(post);
+			themeLinePrev = themeLine;
+		});
+		const readMoreButton = document.querySelectorAll('.read-more__button');
+		readMoreButton.forEach((e) => {
+			e.addEventListener('click', () => {
+				const { id } = e.parentNode.firstElementChild;
+				e.parentNode.firstElementChild.textContent = data[id];
+				e.remove();
+			});
+		});
+	});
+}
